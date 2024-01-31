@@ -1,7 +1,7 @@
 /* sidebar styles */
 .sidebar-container {
     width: 100%;
-    background: var(--clr-black);
+    background: linear-gradient(to right, #b18ea6, #fb8fe0 , #924492);
     position: fixed;
     top: 0;
     left: -100%;
@@ -10,6 +10,9 @@
     /* transform: translateX(-100%); */
     opacity: 0;
     z-index: 10;
+    animation: gradientAnimation 2s infinite alternate;
+    background-size: 200% 100%;
+    background-repeat: no-repeat
   }
   .sidebar-container.show-sidebar {
     opacity: 1;
@@ -51,6 +54,7 @@
     letter-spacing: 1px;
     text-transform: capitalize;
     padding: 5px 10px;
+    font-family: 'Arial', sans-serif;
     border-radius: var(--radius);
   }
   .sidebar-container .sidebar-content .nav-link.active {
