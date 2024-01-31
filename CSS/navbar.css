@@ -1,0 +1,113 @@
+.nav-container{
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    background: linear-gradient(to right, #8e90b1, #8f94fb , #444792);
+    width: 100%;
+    animation: gradientAnimation 2s infinite alternate;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    background-size: 200% 100%; /* Try adjusting background size */
+    background-repeat: no-repeat
+}
+
+
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
+
+.nav-center{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+.nav-container .food-munch-logo{
+    width: 40px;
+}
+
+.nav-container .hamburger{
+    width: 25px;
+    display: flex;
+    justify-self: flex-end;
+  }
+
+.nav-container .nav-links-main{
+    display: none;
+}
+
+.nav-container.sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    transform: translateY(0%);
+    transition: var(--transition);
+  }
+
+
+@media screen and (min-width:992px){
+    
+     
+    .nav-container{
+        min-height: 70px; 
+    }
+
+    .nav-container .hamburger{
+        display: none;
+    }
+
+    .nav-container .food-munch-logo{
+        width: 80px;
+        height: 60px;
+        cursor: pointer;
+    }
+
+    .nav-center{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-container .nav-links-main{
+        display: flex;
+    }
+
+    .nav-container .nav-social-link{
+        display: flex;
+        
+    }
+    .nav-container .nav-links{
+        display: flex;
+        column-gap: 20px;
+        margin-right: 50px;
+    }
+
+    .nav-container .nav-link{
+        color: var(--clr-white);
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: capitalize;
+        font-family: 'Arial', sans-serif;
+        letter-spacing: 1px;
+        padding: 5px 10px;
+        border-radius: var(--radius);
+        transition: var(--transition);
+    }
+
+    .nav-container .nav-link.active, .nav-link:hover{
+        background-color: white;
+        color: black;
+    }
+
+  }

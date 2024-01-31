@@ -1,0 +1,327 @@
+.letus-setion-container {
+    background-color: #f9fbfe;
+
+}
+
+.letus-setion-container {
+    display: flex;
+}
+
+.letus-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    min-width: 90%;
+}
+
+.letus-section-card-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+}
+
+.wcu-section-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+
+.wcu-section-description {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.wcu-card {
+    text-align: center;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e5eaf4;
+    border-radius: 16px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wcu-card-image {
+    width: 87px;
+    height: 90px;
+}
+
+.wcu-card-title {
+    color: #323f4b;
+    font-family: "Roboto";
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.wcu-card-description {
+    color: #7b8794;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.offers {
+    color: #323f4b;
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+/* signature section*/
+
+.signature-container {
+    background-color: rgba(248, 224, 228, 0.774);
+}
+
+.signature {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.signature-topside-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+}
+
+.signature-topside-text-container p {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.signature-topside-text-container h1 {
+    font-family: 'roboto';
+    font-weight: bold;
+}
+
+
+.menu-item-card {
+    width: 100%;
+    background: var(--clr-white);
+    height: 100%;
+    display: flex;
+    box-shadow: var(--box-shadow-light);
+    border-radius: var(--radius);
+    transition: var(--transition);
+    row-gap: 10px;
+    flex-direction: column;
+}
+
+.menu-item-card img {
+    width: 100%;
+    height: 75%;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.card-text-container {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.signature-menu-card-title {
+    font-family: var(--font-family);
+}
+
+.checked {
+    color: orange;
+}
+
+.signature-reting-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+
+}
+
+.signature-ration-icons-container {
+    display: flex;
+    column-gap: 5px;
+
+}
+
+.signature-card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 12px;
+
+}
+
+
+
+.signature-ration-icons-container p {
+    color: gray;
+}
+
+.signature-reting-container p {
+    font-weight: bold;
+}
+
+
+.menu-item-card:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: var(--box-shadow-dark);
+}
+
+.menu-item-card img:hover {
+    transform: scale(1.0005) rotateZ(1deg);
+}
+
+
+@media screen and (min-width:992px) {
+
+    .wcu-section-heading {
+        font-size: 38px;
+        font-weight: 900;
+    }
+
+    .wcu-card-description {
+        color: #7b8794;
+        font-family: "Roboto";
+        font-size: 22px;
+    }
+
+    .offers {
+        color: #323f4b;
+        font-style: italic;
+        font-weight: 600;
+    }
+
+    .wcu-section-description {
+        color: #5a7184;
+        font-family: "Roboto";
+        font-size: 22px;
+        font-weight: 800;
+    }
+    
+    .wcu-card {
+        padding: 18px;
+        row-gap: 12px;
+    }
+    
+    .wcu-card-title {
+        color: #323f4b;
+        font-family: "Roboto";
+        font-size: 28px;
+        font-weight: 900;
+    }
+    
+
+
+
+
+
+    .letus-section-card-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 40px;
+    }
+
+    .signature-card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 45px;
+    }
+
+
+    .signature-topside-text-container p {
+        color: red;
+        font-size: 28px;
+        font-weight: bold;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .signature-topside-text-container h1 {
+        font-family: 'roboto';
+        font-weight: bold;
+        font-size: 35px;
+    }
+
+    .menu-item-card:hover img {
+        transform: scale(1.0005) rotateZ(1deg);
+    }
+
+    .menu-item-card {
+        overflow: hidden;
+    }
+
+
+
+
+}
+
+/* Animation part*/
+/* .animation-pics{
+    display: none;
+}
+
+
+@media screen and (min-width:992px) {
+    .animation-pics{
+        display: flex;
+        column-gap: 25px;
+        margin-top: 50px;
+        column-gap: 200px;
+        transform: translatex(2200px);
+        transition: var(--transition);
+        animation: transiteAnimation 20s linear infinite;
+    }
+    
+    .dish-img{
+        height: 200px;
+        width: 220px;
+        display: inline-block;
+        border-radius: 50%;
+    }
+    
+
+    
+} */
+
+
+/* @keyframes transiteAnimation {
+    0%{
+        transform: translateX(1000px);
+    }
+    10%{
+        transform: translateX(800px);
+    }
+    20%{
+        transform: translateX(500px);
+    }
+    50%{
+        transform: translateX(100px);
+    }
+
+    70%{
+        transform: translateX(-200px);
+    }
+    80%{
+        transform: translateX(-450px);
+    }
+    90%{
+        transform: translateX(-800px);
+    }
+    100%{
+        transform: translateX(-1200px);
+    }
+    
+}
+ */

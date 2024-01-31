@@ -1,0 +1,154 @@
+.delivery-and-payment-section {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+.delivery-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  .delivery-and-payment-section-img {
+    width: 270px;
+  }
+  .delivery-and-payment-section-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .delivery-and-payment-section-description {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  .payment-card-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 28px;
+  }
+  .thanking-customers-section {
+    background-color: #d0b2001a;
+  }
+  .thanking-customers-section-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+   
+  }
+  .thanking-customers-section-description {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+    
+  }
+  .thanking-customers-section-img {
+    width: 270px;
+    margin-bottom: 20px;
+  }
+
+  .payment-section-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 12px;
+  }
+
+ .payment-methods{
+    display: flex;
+    row-gap: 12px;
+ }
+
+ .thanking-customers-section-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    row-gap: 12px;
+ }
+
+ .tanking-btn-container{
+    display: flex;
+    justify-content: center;
+ }
+
+ .img-extra-container{
+    display: none;
+ }
+
+
+ @media screen and (min-width:992px){
+    .delivery-and-payment-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-width: 100%;
+    }
+    
+    .delivery-and-payment-section-img {
+        width: 50%;
+      }
+
+    .thanking-customers-section{
+        min-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .img-thanking{
+        display: none;     
+    }
+
+    .img-extra-container{
+        display: inline-block;
+     }
+
+     .thanking-customers-section-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+        row-gap: 18px;
+     }
+
+     .img-extra-container{
+        justify-self: center;
+     }
+
+     .thanking-customers-section-heading {
+        font-size: 40px;
+        font-weight: 900;
+       
+      }
+      .thanking-customers-section-description {
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        
+      }
+      .thanking-customers-section-img {
+        width: 270px;
+        margin-bottom: 20px;
+      }
+
+      .delivery-and-payment-section-heading {
+        font-size: 48px;
+        font-weight: 900;
+      }
+      .delivery-and-payment-section-description {
+        font-size: 25px;
+        letter-spacing: 1px;
+      }
+      .payment-card-img {
+        width: 100px;
+        height: 100px;
+        margin-right: 28px;
+      }
+
+    
+ }
