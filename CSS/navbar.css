@@ -93,6 +93,7 @@
         margin-right: 50px;
     }
 
+    /* nav-links buttons*/
     .nav-container .nav-link{
         color: var(--clr-white);
         font-size: 18px;
@@ -102,7 +103,7 @@
         letter-spacing: 1px;
         padding: 5px 10px;
         border-radius: var(--radius);
-        transition: var(--transition);
+        transition: all 0.9s linear;
     }
 
     .nav-container .nav-link.active, .nav-link:hover{
